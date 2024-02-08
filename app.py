@@ -16,6 +16,10 @@ def about():
 def resume():
    return render_template('resume.html')
 
+@app.route("/test")
+def resume():
+   return 'Test'
+
 @app.route("/contact",methods=["POST","GET"])
 def contact():
    if request.method=="POST":
